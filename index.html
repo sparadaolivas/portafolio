@@ -209,25 +209,25 @@
                     <h2 class="mb-5">Habilidades</h2>
                     <div class="subheading mb-3">Software de diseño y minería</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img title="Studion OP" src="assets/img/studioop.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Studio UG" src="assets/img/studioug.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Vulcan" src="assets/img/vulcan.jpg" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
+                        <li class="list-inline-item"><img id="op" src="assets/img/studioop.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="ug" src="assets/img/studioug.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="vulcan" src="assets/img/vulcan.jpg" height="50"/></li>
                     </ul>
                     <div class="subheading mb-3">Herramientas y lenguajes de programación</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img title="HTML5" src="assets/img/html5_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="CSS3" src="assets/img/css3_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Javascript" src="assets/img/js_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Bootstrap" src="assets/img/bootstrap_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Github" src="assets/img/github_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Python" src="assets/img/python_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Django" src="assets/img/django_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="PostgreSQL" src="assets/img/postgresql_logo.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
+                        <li class="list-inline-item"><img id="html5" src="assets/img/html5_logo.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="css3" src="assets/img/css3_logo.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="js" src="assets/img/js_logo.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="bootstrap" src="assets/img/bootstrap_logo.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="github" src="assets/img/github_logo.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="python" src="assets/img/python_logo.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="django" src="assets/img/django_logo.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="postgresql" src="assets/img/postgresql_logo.png" height="50"/></li>
                     </ul>
                     <div class="subheading mb-3">Software CAD y CAE</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img title="Autocad" src="assets/img/autocad.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
-                        <li class="list-inline-item"><img title="Inventor" src="assets/img/inventor.png" onmouseover="this.width=80;this.height=80;" onmouseout="this.width=50;this.height=50;" width="50" height="50"/></li>
+                        <li class="list-inline-item"><img id="autocad" src="assets/img/autocad.png" height="50"/></li>
+                        <li class="list-inline-item"><img id="inventor" src="assets/img/inventor.png" height="50"/></li>
                     </ul>
                    <!-- <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
@@ -260,7 +260,11 @@
                 </div>
             </section>
             <hr class="m-0" />-->
-            
+        
+            <button id="myButton">My Button</button>
+
+        
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -268,5 +272,59 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- Development -->
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <!-- Production -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            // With the above scripts loaded, you can call `tippy()` with a CSS
+            // selector and a `content` prop:
+        tippy('#op', {
+            content: 'Datamine Studio OP',
+            });
+        tippy('#ug', {
+            content: 'Datamine Studio UG',
+            });
+        tippy('#vulcan', {
+            content: 'Maptek Vulcan',
+            });
+        tippy('#autocad', {
+            content: 'AutoCAD',
+            });
+        tippy('#inventor', {
+            content: 'Autodesk Inventor',
+            });
+        tippy('#html5', {
+            content: 'HTML 5',
+            });
+        tippy('#css3', {
+            content: 'CSS 3',
+            });
+        tippy('#js', {
+            content: 'Javascript',
+            });
+        tippy('#bootstrap', {
+            content: 'Bootstrap',
+            });
+        tippy('#github', {
+            content: 'Github',
+            });
+        tippy('#python', {
+            content: 'Python',
+            });
+        tippy('#django', {
+            content: 'Django',
+            });
+        tippy('#postgresql', {
+            content: 'PostgreSQL',
+            });
+        
+        
+    </script>
+
     </body>
 </html>
